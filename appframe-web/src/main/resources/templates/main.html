@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+      xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head th:replace="fragments/common_header :: common_header(~{::title},~{::link})">
+  <title>框架</title>
+  <link href="/css/frame/index.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+<div th:replace="fragments/header :: header">Header</div>
+
+<!-- Full Width Column -->
+<div class="content-wrapper" >
+<div class="container" id="mainDiv">
+</div>     
+</div><!-- /.content-wrapper -->
+<div th:replace="fragments/footer :: footer">footer</div>
+</div><!-- ./wrapper -->
+<div th:replace="fragments/common_footer :: common_footer(~{})"></div>
+</body>
+<script th:inline="javascript">
+$(function(){ 
+	   //首页默认加载
+    loadPage("/index");
+    //loadPage("/message/list");
+	   //loadPage("/markdown/preview?id=402880e958ecdff60158ed0c62ba0001")
+	   $("a[data-url]").click(function(evt){
+		   loadPage($(this).data("url"));
+		   evt.preventDefault();
+		   $('ul.nav > li').removeClass('active');
+		   $(this).addClass('active');
+		   $(this).parent().addClass("active");
+		   //$("ul.nav li").removeClass("active");
+		   //$(this).addClass("active");
+	   }); 
+	
+});
+</script>
+</html>

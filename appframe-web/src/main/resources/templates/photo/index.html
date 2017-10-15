@@ -1,0 +1,201 @@
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="newPhotoBook" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">新增相册</h4>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+  	</div>
+	<!-- /.modal-dialog -->
+</div>
+
+<section class="content-header">
+    <h1>
+        相册管理
+        <small>功能介绍</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="${basePath}"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li class="active">相册管理</li>
+    </ol>
+</section>
+  
+  
+  <section class="content">
+
+
+
+<div class="panel panel-yellow">
+	<div class="panel-heading">
+		<i class="fa fa-camera fa-fw"></i>相册列表
+		<div class="btn-group pull-right">
+                                <button type="button" class="btn btn-warning btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#newPhotoBook">
+                                            <i class="fa fa-plus fa-fw" ></i> 新增相册
+                                        </a>
+                                    </li>
+                                  
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-minus fa-fw"></i> 删除相册
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+	</div>
+	<div class="panel-body">
+	<div class="row">
+        <div class="btn-wrapper">
+		        <strong>显示为：</strong>
+		        <div class="btn-group">
+		            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+		            </span>列表布局</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+		                class="glyphicon glyphicon-th"></span>网格布局</a>
+		        </div>
+		    </div>
+		    <div id="links">
+		    <div id="products" class="row list-group">
+		        <div class="item  col-xs-4 col-lg-4">
+		            <div class="img-thumbnail">
+		            <a href="http://192.168.157.130/images/test.jpg" class="thumbnail">
+				         <img src="http://192.168.157.130/images/test.jpg!c400x250.jpg" 
+				         alt="通用的占位符缩略图">
+				      </a>
+		                <div class="caption">
+		                    <h4 class="group inner list-group-item-heading">
+		                        Product title</h4>
+		                    <p class="group inner list-group-item-text">
+		                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+		                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		                   
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item  col-xs-4 col-lg-4">
+		        
+		            <div class="img-thumbnail">
+		             <a href="http://192.168.157.130/images/DSC4195.jpg" class="thumbnail">
+				         <img src="http://192.168.157.130/images/DSC4195.jpg!c400x250.jpg" 
+				         alt="通用的占位符缩略图">
+				      </a>
+		                
+		                <div class="caption">
+		                    <h4 class="group inner list-group-item-heading">
+		                        Product title</h4>
+		                    <p class="group inner list-group-item-text">
+		                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+		                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		                    
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item  col-xs-4 col-lg-4">
+		            <div class="img-thumbnail">
+		                <a href="http://192.168.157.130/images/001.JPG" class="thumbnail">
+				         <img src="http://192.168.157.130/images/001.JPG!c400x250.jpg" 
+				         alt="通用的占位符缩略图">
+				      </a>
+		                <div class="caption">
+		                    <h4 class="group inner list-group-item-heading">
+		                        Product title</h4>
+		                    <p class="group inner list-group-item-text">
+		                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+		                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		                   
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item  col-xs-4 col-lg-4">
+		            <div class="img-thumbnail">
+		                <a href="http://192.168.157.130/images/002.JPG" class="thumbnail">
+				         <img src="http://192.168.157.130/images/002.JPG!c400x250.jpg" 
+				         alt="通用的占位符缩略图">
+				      </a>
+		                <div class="caption">
+		                    <h4 class="group inner list-group-item-heading">
+		                        Product title</h4>
+		                    <p class="group inner list-group-item-text">
+		                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+		                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		                   
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item  col-xs-4 col-lg-4">
+		            <div class="img-thumbnail">
+		                <a href="http://192.168.157.130/images/003.JPG" class="thumbnail">
+				         <img src="http://192.168.157.130/images/003.JPG!c400x250.jpg" 
+				         alt="通用的占位符缩略图">
+				      </a>
+		                <div class="caption">
+		                    <h4 class="group inner list-group-item-heading">
+		                        Product title</h4>
+		                    <p class="group inner list-group-item-text">
+		                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+		                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		                    
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item  col-xs-4 col-lg-4">
+		            <div class="img-thumbnail">
+		                <a href="http://192.168.157.130/images/004.JPG" class="thumbnail">
+				         <img src="http://192.168.157.130/images/004.JPG!c400x250.jpg" 
+				         alt="通用的占位符缩略图">
+				      </a>
+		                <div class="caption">
+		                    <h4 class="group inner list-group-item-heading">
+		                        Product title</h4>
+		                    <p class="group inner list-group-item-text">
+		                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+		                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		                    
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+                 
+	</div></div>
+</div>
+
+</div>
+</section>
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+$(document).ready(function() {
+    $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+    $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+});
+</script>

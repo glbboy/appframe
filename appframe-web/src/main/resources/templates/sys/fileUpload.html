@@ -1,0 +1,20 @@
+<div id="updating" class="form-group text-center">  
+    <label>正在上传：<span id="updated"></span><span id="total"></span></label>  
+</div>  
+<div id="filesTableDiv">  
+    <div id="sameNameDiv" class="alert alert-warning alert-dismissible fade in hidden" role="alert">  
+        <p class="sameNameTip">上传文件中有相同名称的文件0个，是否确认上传</p>  
+        <p>  
+            <button id="noBtn" type="button" class="btn btn-link">否</button>  
+            <button id="yesBtn" type="button" class="btn btn-link">是</button>  
+        </p>  
+    </div>  
+    <table id="filesTable" class="table" data-pagination="false" data-unique-id="index">  
+          
+    </table>  
+</div>  
+<script type="text/javascript">  
+    require(["../../js/mcm/filesUpload"], function(filesUpload) {  
+        filesUpload.start();  
+    });  
+</script>

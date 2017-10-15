@@ -1,0 +1,46 @@
+<section class="content-header">
+    <h1>
+        投资系统
+        <small>功能介绍</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="${basePath}"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li class="active">投资系统</li>
+    </ol>
+</section>
+
+<div class="panel panel-yellow">
+	<div class="panel-heading">
+		<i class="fa fa-camera fa-fw"></i>新增照片
+	</div>
+	<div class="panel-body">
+		<form enctype="multipart/form-data">
+			<input type="email" class="form-control" name="exampleInputEmail1" placeholder="Email">
+		     <input id="file-Portrait" type="file" name="file" multiple>
+		</form>
+	</div>
+</div>
+              
+<script>
+initFileInput("file-Portrait", "/batch/upload");
+$('#file-Portrait').on('fileuploaderror', function(event, data, previewId, index) {
+    var form = data.form, files = data.files, extra = data.extra,
+            response = data.response, reader = data.reader;
+    console.log(data);
+    console.log(response);
+    console.log('File upload error');
+});
+$('#file-Portrait').on('fileerror', function(event, data) {
+    console.log(data.id);
+    console.log(data.index);
+    console.log(data.file);
+    console.log(data.reader);
+    console.log(data.files);
+});
+$('#file-Portrait').on('fileuploaded', function(event, data, previewId, index) {
+    var form = data.form, files = data.files, extra = data.extra,
+            response = data.response, reader = data.reader;
+    console.log(data);
+    console.log('File uploaded triggered');
+});
+</script>
