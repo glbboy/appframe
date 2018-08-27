@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    primary:
+      url: jdbc:mysql://192.168.3.30:3306/cnframe?characterEncoding=utf-8&useSSL=false&autoReconnect=true&userUnicode=true
+      username: cnframe
+      password: '{cipher}AQBH9+1EnVL3cucrZPBOr/69jccTVG2zvzXquYpvDdTcydDT1jxAkJ5bPI3TeZUfLDxVm7jb7noLcgxA/h4LuMBvTBrJSe1OtPdt/98tnFnfFUa7GqJnIfFykqGT2JcN1GLzMBs0SjcKhR6K5B1d+WRLmpqpAjBnKFwkPEhzmgr/SoR/A9kHLKSveu3QCcpeFTfPvPrLlcOyT38bGQDuObihHYp9/CcmogRl+B7szJQdVzouStVLsYL22aHJctoR1tYmL75HPpkpZSeiQTOpS0xdfv1DXvMu3aFIMaz4E8pmBBPpBTyeNE2FfIGr6+5Og8haW6oQxCXANFsH9h7Lv0WHK/aBquqJobSZg9X6DKGQ5yuhfDALVMUU7JQ7dEIjmjc='
+    secondary:
+      url: jdbc:mysql://192.168.3.30:3306/cnframe?characterEncoding=utf-8&useSSL=false&autoReconnect=true&useUnicode=true
+      username: cnframe
+      password: '{cipher}AQBH9+1EnVL3cucrZPBOr/69jccTVG2zvzXquYpvDdTcydDT1jxAkJ5bPI3TeZUfLDxVm7jb7noLcgxA/h4LuMBvTBrJSe1OtPdt/98tnFnfFUa7GqJnIfFykqGT2JcN1GLzMBs0SjcKhR6K5B1d+WRLmpqpAjBnKFwkPEhzmgr/SoR/A9kHLKSveu3QCcpeFTfPvPrLlcOyT38bGQDuObihHYp9/CcmogRl+B7szJQdVzouStVLsYL22aHJctoR1tYmL75HPpkpZSeiQTOpS0xdfv1DXvMu3aFIMaz4E8pmBBPpBTyeNE2FfIGr6+5Og8haW6oQxCXANFsH9h7Lv0WHK/aBquqJobSZg9X6DKGQ5yuhfDALVMUU7JQ7dEIjmjc='
+  jpa:
+    database: mysql
+    generate-ddl: false
+    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#      naming:
+#        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
